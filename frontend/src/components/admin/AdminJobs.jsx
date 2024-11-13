@@ -6,9 +6,10 @@ import { Input } from '../ui/input'
 import { useNavigate } from 'react-router-dom'
 
 import { useDispatch } from 'react-redux'
-import { setSearchCompany } from '@/redux/CompanySlice'
+
 import AdminJobsTable from './AdminJobsTable'
 import useGetAdminJobs from '@/hooks/useGetAdminJobs'
+import { setSearchJobs } from '@/redux/jobSlice'
 
 
 const AdminJobs = () => {
@@ -19,7 +20,7 @@ const AdminJobs = () => {
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        dispatch(setSearchCompany(input));
+        dispatch(setSearchJobs(input));
     },[input]);
   return (
     <div>

@@ -1,9 +1,10 @@
-import { setSingleCompany } from '@/redux/CompanySlice'
-
-import { COMPANY_API_END_POINT } from '@/utils/constant'
-import axios from 'axios'
 import  { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { COMPANY_API_END_POINT } from '@/utils/constant'
+import axios from 'axios'
+import { setSingleCompany } from '@/redux/companySlice'
+
+
 
 const useGetCompanyById = (companyId) => {
 

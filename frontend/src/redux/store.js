@@ -1,8 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import authSlice from "./authSlice"
-import jobSlice from "./jobSlice"
-import companySlice from "./CompanySlice";
-import applicationSlice from "./applicationSlice";
+
 
 
 
@@ -19,6 +17,10 @@ import {
   REGISTER,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
+import companySlice from "./companySlice"
+import jobSlice from "./jobSlice"
+
+import applicationSlice from "./applicationSlice";
 
 
 
